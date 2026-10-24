@@ -1,4 +1,16 @@
+/*
+ * ASSIGNMENT 01 - TASK 1
+ * Character Device Driver with IOCTL Interface
+ *
+ * Student: Nguyen Xuan Phu
+ * Student ID: SE203361
+ * University: FPT University
+ *
+ * Target: Linux Kernel 5.15 - ARMv7
+ */
+
 #include <linux/module.h>
+#include <linux/init.h>
 #include <linux/kernel.h>
 #include <linux/fs.h>
 #include <linux/uaccess.h>
@@ -6,176 +18,321 @@
 #include <linux/proc_fs.h>
 #include <linux/seq_file.h>
 #include <linux/mutex.h>
+#include <linux/string.h>
+
 #include "asgn1_ioctl.h"
 
+/* =====================================================
+ * MODULE INFORMATION
+ * ===================================================== */
+
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Nguyen Xuan Phu");
-MODULE_DESCRIPTION("Assignment 01 - Character Device with ioctl");
+MODULE_AUTHOR("Nguyen Xuan Phu - SE203361");
+MODULE_DESCRIPTION("Assignment 01 - Character Device with IOCTL");
 MODULE_VERSION("1.0");
+
+/* =====================================================
+ * DEFINITIONS
+ * ===================================================== */
 
 #define DEVICE_NAME "asgn1"
 #define CLASS_NAME "asgn1_class"
 #define BUFFER_SIZE 1024
 #define DRIVER_MAJOR 241
 
+#define MODE_KERNEL 0
+#define MODE_ECHO   1
+
+/* =====================================================
+ * GLOBAL VARIABLES
+ * ===================================================== */
+
 static int major_number = DRIVER_MAJOR;
 
 static char device_buffer[BUFFER_SIZE];
-static int buffer_len = 0;
-static int open_count = 0;
 
+static int buffer_len = 0;
+
+static int open_count = 0;
 static int write_count = 0;
 static int read_count = 0;
 static int last_write_size = 0;
 
-static int driver_mode = 1;
-static struct class *lab2_class = NULL;
-static struct device *lab2_device = NULL;
+/* Default mode: Echo */
+static int driver_mode = MODE_ECHO;
 
-static DEFINE_MUTEX(lab2_mutex);
+static struct class *asgn1_class;
+static struct device *asgn1_device;
 
+static struct proc_dir_entry *asgn1_proc_entry;
 
-/* =========================================================
- * Character Device
- * ========================================================= */
+static DEFINE_MUTEX(asgn1_mutex);
 
-static int lab2_open(struct inode *inode, struct file *file)
+/* =====================================================
+ * OPEN FUNCTION
+ * ===================================================== */
+
+/*
+ * Open character device.
+ *
+ * Returns:
+ * 0 on success.
+ */
+static int asgn1_open(struct inode *inode,
+                      struct file *file)
 {
     int count;
 
-    mutex_lock(&lab2_mutex);
+    mutex_lock(&asgn1_mutex);
 
     open_count++;
     count = open_count;
 
-    mutex_unlock(&lab2_mutex);
+    mutex_unlock(&asgn1_mutex);
 
-    pr_info("asgn1: device opened (count=%d)\n", count);
+    pr_info("asgn1: device opened, count=%d\n", count);
 
     return 0;
 }
 
-static int lab2_release(struct inode *inode, struct file *file)
+/* =====================================================
+ * RELEASE FUNCTION
+ * ===================================================== */
+
+/*
+ * Close character device.
+ *
+ * Returns:
+ * 0 on success.
+ */
+static int asgn1_release(struct inode *inode,
+                         struct file *file)
 {
-    pr_info("lab2_driver: device closed\n");
+    pr_info("asgn1: device closed\n");
 
     return 0;
 }
 
+/* =====================================================
+ * READ FUNCTION
+ * ===================================================== */
 
-static ssize_t lab2_read(struct file *file,
-                         char __user *buf,
-                         size_t len,
-                         loff_t *offset)
+/*
+ * Read data from driver buffer.
+ *
+ * Parameters:
+ * file   - opened file
+ * buf    - userspace destination
+ * len    - requested bytes
+ * offset - current read position
+ *
+ * Returns:
+ * Number of bytes read, EOF (0), or negative errno.
+ */
+static ssize_t asgn1_read(struct file *file,
+                          char __user *buf,
+                          size_t len,
+                          loff_t *offset)
 {
     ssize_t bytes_read;
 
-    mutex_lock(&lab2_mutex);
+    mutex_lock(&asgn1_mutex);
 
+    /* Validate file offset */
+    if (*offset < 0) {
+        mutex_unlock(&asgn1_mutex);
+        return -EINVAL;
+    }
+
+    /* Return EOF if no data remains */
     if (*offset >= buffer_len) {
-        mutex_unlock(&lab2_mutex);
+        mutex_unlock(&asgn1_mutex);
         return 0;
     }
 
+    /* Limit read size to available data */
     if (len > buffer_len - *offset)
         len = buffer_len - *offset;
 
+    /* Copy data from kernel to userspace */
     if (copy_to_user(buf,
                      device_buffer + *offset,
                      len)) {
 
-        mutex_unlock(&lab2_mutex);
+        mutex_unlock(&asgn1_mutex);
 
-        pr_err("lab2_driver: copy_to_user failed\n");
+        pr_err("asgn1: copy_to_user failed\n");
 
         return -EFAULT;
     }
 
     *offset += len;
-    bytes_read = len;
-    read_count++;
-    mutex_unlock(&lab2_mutex);
 
-    pr_info("lab2_driver: sent %zd bytes to user\n",
-            bytes_read);
+    bytes_read = len;
+
+    if (bytes_read > 0)
+        read_count++;
+
+    mutex_unlock(&asgn1_mutex);
+
+    pr_info("asgn1: read %zd bytes\n", bytes_read);
 
     return bytes_read;
 }
 
+/* =====================================================
+ * WRITE FUNCTION
+ * ===================================================== */
 
-static ssize_t lab2_write(struct file *file,
-                          const char __user *buf,
-                          size_t len,
-                          loff_t *offset)
+/*
+ * Write data into driver buffer.
+ *
+ * MODE_KERNEL (0):
+ * Automatically adds "[KERNEL]" prefix.
+ *
+ * MODE_ECHO (1):
+ * Stores original data without modification.
+ *
+ * Returns:
+ * Number of input bytes written or negative errno.
+ */
+static ssize_t asgn1_write(struct file *file,
+                           const char __user *buf,
+                           size_t len,
+                           loff_t *offset)
 {
-    if (len > BUFFER_SIZE - 1) {
-        pr_warn("lab2_driver: write too large, truncating\n");
+    const char prefix[] = "[KERNEL]";
 
-        len = BUFFER_SIZE - 1;
+    size_t prefix_len;
+    int current_mode;
+    int current_buffer_len;
+
+    if (len == 0)
+        return 0;
+
+    mutex_lock(&asgn1_mutex);
+
+    /* Determine active mode */
+    current_mode = driver_mode;
+
+    if (current_mode == MODE_KERNEL)
+        prefix_len = sizeof(prefix) - 1;
+    else
+        prefix_len = 0;
+
+    /* Check buffer capacity */
+    if (len > BUFFER_SIZE - 1 - prefix_len) {
+
+        mutex_unlock(&asgn1_mutex);
+
+        pr_err("asgn1: write exceeds buffer size\n");
+
+        return -EMSGSIZE;
     }
 
-    mutex_lock(&lab2_mutex);
+    /* Add prefix in Kernel mode */
+    if (current_mode == MODE_KERNEL) {
 
-    /* Check driver mode before writing */
-    if (driver_mode == 0) {
-        mutex_unlock(&lab2_mutex);
-
-        pr_warn("asgn1: write denied in read-only mode\n");
-
-        return -EPERM;
+        memcpy(device_buffer,
+               prefix,
+               prefix_len);
     }
-    if (copy_from_user(device_buffer, buf, len)) {
 
-        mutex_unlock(&lab2_mutex);
+    /* Copy original data from userspace */
+    if (copy_from_user(device_buffer + prefix_len,
+                       buf,
+                       len)) {
 
-        pr_err("lab2_driver: copy_from_user failed\n");
+        mutex_unlock(&asgn1_mutex);
+
+        pr_err("asgn1: copy_from_user failed\n");
 
         return -EFAULT;
     }
 
-    buffer_len = len;
+    /* Update buffer */
+    buffer_len = prefix_len + len;
 
     device_buffer[buffer_len] = '\0';
-    write_count++;
-    last_write_size = len;
-    mutex_unlock(&lab2_mutex);
 
-    pr_info("lab2_driver: received %zu bytes: [%s]\n",
-            len,
-            device_buffer);
+    /* Update statistics */
+    write_count++;
+
+    last_write_size = len;
+
+    current_buffer_len = buffer_len;
+
+    mutex_unlock(&asgn1_mutex);
+
+    pr_info(
+        "asgn1: write success, mode=%d, length=%d\n",
+        current_mode,
+        current_buffer_len
+    );
 
     return len;
 }
-/* =========================================================
- * IOCTL Operations
- * ========================================================= */
 
+/* =====================================================
+ * IOCTL FUNCTION
+ * ===================================================== */
+
+/*
+ * Handle device-specific IOCTL commands.
+ *
+ * Supported commands:
+ *
+ * ASGN1_RESET_BUFFER
+ * ASGN1_GET_STATS
+ * ASGN1_SET_MODE
+ * ASGN1_GET_VERSION
+ *
+ * Returns:
+ * 0 on success or negative errno.
+ */
 static long asgn1_ioctl(struct file *file,
                         unsigned int cmd,
                         unsigned long arg)
 {
     struct asgn1_stats stats;
+
     int mode;
-    char version[64] = "Assignment 01 Driver v1.0";
+
+    char version[64] =
+        "asgn1_driver v1.0 - SE203361";
 
     switch (cmd) {
 
+    /* ---------------------------------------------
+     * IOCTL 1: RESET BUFFER
+     * --------------------------------------------- */
+
     case ASGN1_RESET_BUFFER:
 
-        mutex_lock(&lab2_mutex);
+        mutex_lock(&asgn1_mutex);
 
         memset(device_buffer, 0, BUFFER_SIZE);
+
         buffer_len = 0;
 
-        mutex_unlock(&lab2_mutex);
+        /* Reset read/write counters */
+        write_count = 0;
+        read_count = 0;
+        last_write_size = 0;
 
-        pr_info("asgn1: buffer reset\n");
+        mutex_unlock(&asgn1_mutex);
+
+        pr_info("asgn1: RESET_BUFFER called\n");
 
         return 0;
 
+    /* ---------------------------------------------
+     * IOCTL 2: GET STATISTICS
+     * --------------------------------------------- */
+
     case ASGN1_GET_STATS:
 
-        mutex_lock(&lab2_mutex);
+        mutex_lock(&asgn1_mutex);
 
         stats.open_count = open_count;
         stats.write_count = write_count;
@@ -183,72 +340,135 @@ static long asgn1_ioctl(struct file *file,
         stats.buffer_len = buffer_len;
         stats.last_write_size = last_write_size;
 
-        mutex_unlock(&lab2_mutex);
+        mutex_unlock(&asgn1_mutex);
 
         if (copy_to_user((void __user *)arg,
-                         &stats, sizeof(stats)))
+                         &stats,
+                         sizeof(stats))) {
+
             return -EFAULT;
+        }
+
+        pr_info("asgn1: GET_STATS called\n");
 
         return 0;
+
+    /* ---------------------------------------------
+     * IOCTL 3: SET MODE
+     * --------------------------------------------- */
 
     case ASGN1_SET_MODE:
 
         if (copy_from_user(&mode,
                            (void __user *)arg,
-                           sizeof(mode)))
+                           sizeof(mode))) {
+
             return -EFAULT;
+        }
 
-        if (mode != 0 && mode != 1)
+        /* Only Mode 0 and Mode 1 are supported */
+        if (mode != MODE_KERNEL &&
+            mode != MODE_ECHO) {
+
+            pr_warn("asgn1: invalid mode=%d\n", mode);
+
             return -EINVAL;
+        }
 
-        mutex_lock(&lab2_mutex);
+        mutex_lock(&asgn1_mutex);
 
         driver_mode = mode;
 
-        mutex_unlock(&lab2_mutex);
+        mutex_unlock(&asgn1_mutex);
 
-        pr_info("asgn1: mode changed to %d\n", mode);
+        if (mode == MODE_KERNEL) {
+
+            pr_info(
+                "asgn1: SET_MODE = 0 (Kernel mode)\n"
+            );
+
+        } else {
+
+            pr_info(
+                "asgn1: SET_MODE = 1 (Echo mode)\n"
+            );
+        }
 
         return 0;
+
+    /* ---------------------------------------------
+     * IOCTL 4: GET VERSION
+     * --------------------------------------------- */
 
     case ASGN1_GET_VERSION:
 
         if (copy_to_user((void __user *)arg,
-                         version, sizeof(version)))
+                         version,
+                         sizeof(version))) {
+
             return -EFAULT;
+        }
+
+        pr_info("asgn1: GET_VERSION called\n");
 
         return 0;
 
+    /* ---------------------------------------------
+     * INVALID IOCTL
+     * --------------------------------------------- */
+
     default:
+
+        pr_warn(
+            "asgn1: unsupported ioctl command\n"
+        );
+
         return -ENOTTY;
     }
 }
 
-static const struct file_operations lab2_fops = {
+/* =====================================================
+ * FILE OPERATIONS
+ * ===================================================== */
+
+static const struct file_operations asgn1_fops = {
+
     .owner = THIS_MODULE,
-    .open = lab2_open,
-    .read = lab2_read,
-    .write = lab2_write,
-    .release = lab2_release,
+
+    .open = asgn1_open,
+
+    .read = asgn1_read,
+
+    .write = asgn1_write,
+
+    .release = asgn1_release,
+
     .unlocked_ioctl = asgn1_ioctl,
+
+    .llseek = no_llseek,
 };
 
-
-/* =========================================================
+/* =====================================================
  * PROCFS
- * /proc/lab2_info
- * ========================================================= */
+ * /proc/asgn1_info
+ * ===================================================== */
 
-static int lab2_proc_show(struct seq_file *m,
-                          void *v)
+/*
+ * Show character driver information.
+ *
+ * Returns:
+ * 0 on success.
+ */
+static int asgn1_proc_show(struct seq_file *m,
+                           void *v)
 {
-    mutex_lock(&lab2_mutex);
+    mutex_lock(&asgn1_mutex);
 
     seq_printf(m,
-               "LAB-02 Character Device Driver\n");
+               "Assignment 01 Character Device Driver\n");
 
     seq_printf(m,
-               "==============================\n");
+               "=====================================\n");
 
     seq_printf(m,
                "Device name : %s\n",
@@ -271,82 +491,107 @@ static int lab2_proc_show(struct seq_file *m,
                open_count);
 
     seq_printf(m,
-               "Last data   : %s\n",
-               buffer_len > 0 ? device_buffer : "(empty)");
+               "Read count  : %d\n",
+               read_count);
 
-    mutex_unlock(&lab2_mutex);
+    seq_printf(m,
+               "Write count : %d\n",
+               write_count);
+
+    seq_printf(m,
+               "Mode        : %d\n",
+               driver_mode);
+
+    seq_printf(m,
+               "Last data   : %s\n",
+               buffer_len > 0 ?
+               device_buffer :
+               "(empty)");
+
+    mutex_unlock(&asgn1_mutex);
 
     return 0;
 }
 
-
-static int lab2_proc_open(struct inode *inode,
-                          struct file *file)
+/*
+ * Open procfs entry.
+ */
+static int asgn1_proc_open(struct inode *inode,
+                           struct file *file)
 {
     return single_open(file,
-                       lab2_proc_show,
+                       asgn1_proc_show,
                        NULL);
 }
 
+/* Linux Kernel 5.15 proc_ops */
+static const struct proc_ops asgn1_proc_ops = {
 
-static const struct proc_ops lab2_proc_ops = {
-    .proc_open    = lab2_proc_open,
-    .proc_read    = seq_read,
-    .proc_lseek   = seq_lseek,
+    .proc_open = asgn1_proc_open,
+
+    .proc_read = seq_read,
+
+    .proc_lseek = seq_lseek,
+
     .proc_release = single_release,
 };
 
+/* =====================================================
+ * SYSFS ATTRIBUTES
+ * ===================================================== */
 
-/* =========================================================
- * SYSFS
- * /sys/class/lab2_class/lab2/
- * ========================================================= */
-
+/*
+ * Read buffer length through sysfs.
+ */
 static ssize_t buffer_len_show(struct device *dev,
                                struct device_attribute *attr,
                                char *buf)
 {
     ssize_t ret;
 
-    mutex_lock(&lab2_mutex);
+    mutex_lock(&asgn1_mutex);
 
     ret = scnprintf(buf,
                     PAGE_SIZE,
                     "%d\n",
                     buffer_len);
 
-    mutex_unlock(&lab2_mutex);
+    mutex_unlock(&asgn1_mutex);
 
     return ret;
 }
 
-
+/*
+ * Read open count through sysfs.
+ */
 static ssize_t open_count_show(struct device *dev,
                                struct device_attribute *attr,
                                char *buf)
 {
     ssize_t ret;
 
-    mutex_lock(&lab2_mutex);
+    mutex_lock(&asgn1_mutex);
 
     ret = scnprintf(buf,
                     PAGE_SIZE,
                     "%d\n",
                     open_count);
 
-    mutex_unlock(&lab2_mutex);
+    mutex_unlock(&asgn1_mutex);
 
     return ret;
 }
 
-
+/*
+ * Read last stored data through sysfs.
+ */
 static ssize_t last_data_show(struct device *dev,
                               struct device_attribute *attr,
                               char *buf)
 {
     ssize_t ret;
 
-    mutex_lock(&lab2_mutex);
+    mutex_lock(&asgn1_mutex);
 
     ret = scnprintf(buf,
                     PAGE_SIZE,
@@ -355,190 +600,223 @@ static ssize_t last_data_show(struct device *dev,
                     device_buffer :
                     "(empty)");
 
-    mutex_unlock(&lab2_mutex);
+    mutex_unlock(&asgn1_mutex);
 
     return ret;
 }
 
-
+/* Define read-only sysfs attributes */
 static DEVICE_ATTR_RO(buffer_len);
 static DEVICE_ATTR_RO(open_count);
 static DEVICE_ATTR_RO(last_data);
 
+/* Attribute list */
+static struct attribute *asgn1_attrs[] = {
 
-static struct attribute *lab2_attrs[] = {
     &dev_attr_buffer_len.attr,
+
     &dev_attr_open_count.attr,
+
     &dev_attr_last_data.attr,
+
     NULL,
 };
 
+static const struct attribute_group asgn1_attr_group = {
 
-static const struct attribute_group lab2_attr_group = {
-    .attrs = lab2_attrs,
+    .attrs = asgn1_attrs,
 };
 
+/* =====================================================
+ * MODULE INITIALIZATION
+ * ===================================================== */
 
-/* =========================================================
- * MODULE INIT
- * ========================================================= */
-
-static int __init lab2_init(void)
+/*
+ * Initialize character driver.
+ *
+ * Registers:
+ * - Character device
+ * - Device class
+ * - Device node
+ * - Sysfs attributes
+ * - Procfs entry
+ *
+ * Returns:
+ * 0 on success or negative errno.
+ */
+static int __init asgn1_init(void)
 {
     int ret;
 
-    pr_info("lab2_driver: initializing module\n");
+    pr_info("asgn1: initializing module\n");
 
+    /* Initialize default state */
+    memset(device_buffer, 0, BUFFER_SIZE);
+
+    buffer_len = 0;
+    open_count = 0;
+    write_count = 0;
+    read_count = 0;
+    last_write_size = 0;
+
+    driver_mode = MODE_ECHO;
 
     /* Register character device */
-
     ret = register_chrdev(major_number,
                           DEVICE_NAME,
-                          &lab2_fops);
+                          &asgn1_fops);
 
     if (ret < 0) {
-        pr_err("lab2_driver: register_chrdev failed: %d\n",
-               ret);
+
+        pr_err(
+            "asgn1: register_chrdev failed: %d\n",
+            ret
+        );
 
         return ret;
     }
 
+    /* Create device class */
+    asgn1_class = class_create(THIS_MODULE,
+                               CLASS_NAME);
 
-    /* Create class */
+    if (IS_ERR(asgn1_class)) {
 
-    lab2_class = class_create(THIS_MODULE,
-                              CLASS_NAME);
-
-    if (IS_ERR(lab2_class)) {
+        ret = PTR_ERR(asgn1_class);
 
         unregister_chrdev(major_number,
                           DEVICE_NAME);
 
-        return PTR_ERR(lab2_class);
+        return ret;
     }
 
-
     /* Create device */
-
-    lab2_device = device_create(
-        lab2_class,
+    asgn1_device = device_create(
+        asgn1_class,
         NULL,
         MKDEV(major_number, 0),
         NULL,
         DEVICE_NAME
     );
 
-    if (IS_ERR(lab2_device)) {
+    if (IS_ERR(asgn1_device)) {
 
-        class_destroy(lab2_class);
+        ret = PTR_ERR(asgn1_device);
+
+        class_destroy(asgn1_class);
 
         unregister_chrdev(major_number,
                           DEVICE_NAME);
 
-        return PTR_ERR(lab2_device);
+        return ret;
     }
 
-
     /* Create sysfs attributes */
-
     ret = sysfs_create_group(
-        &lab2_device->kobj,
-        &lab2_attr_group
+        &asgn1_device->kobj,
+        &asgn1_attr_group
     );
 
     if (ret) {
 
-        device_destroy(
-            lab2_class,
-            MKDEV(major_number, 0)
-        );
+        device_destroy(asgn1_class,
+                       MKDEV(major_number, 0));
 
-        class_destroy(lab2_class);
+        class_destroy(asgn1_class);
 
-        unregister_chrdev(
-            major_number,
-            DEVICE_NAME
-        );
+        unregister_chrdev(major_number,
+                          DEVICE_NAME);
 
         return ret;
     }
 
+    /* Create procfs entry */
+    asgn1_proc_entry = proc_create(
+        "asgn1_info",
+        0444,
+        NULL,
+        &asgn1_proc_ops
+    );
 
-    /* Create procfs */
-
-    if (!proc_create("lab2_info",
-                     0444,
-                     NULL,
-                     &lab2_proc_ops)) {
+    if (!asgn1_proc_entry) {
 
         sysfs_remove_group(
-            &lab2_device->kobj,
-            &lab2_attr_group
+            &asgn1_device->kobj,
+            &asgn1_attr_group
         );
 
-        device_destroy(
-            lab2_class,
-            MKDEV(major_number, 0)
-        );
+        device_destroy(asgn1_class,
+                       MKDEV(major_number, 0));
 
-        class_destroy(lab2_class);
+        class_destroy(asgn1_class);
 
-        unregister_chrdev(
-            major_number,
-            DEVICE_NAME
-        );
+        unregister_chrdev(major_number,
+                          DEVICE_NAME);
 
         return -ENOMEM;
     }
 
+    pr_info(
+        "asgn1: module loaded successfully\n"
+    );
 
     pr_info(
-        "lab2_driver: loaded successfully, major=%d\n",
+        "asgn1: /dev/asgn1 registered, major=%d\n",
         major_number
     );
 
     pr_info(
-        "lab2_driver: /proc/lab2_info created\n"
+        "asgn1: /proc/asgn1_info created\n"
     );
 
     pr_info(
-        "lab2_driver: sysfs attributes created\n"
+        "asgn1: sysfs attributes created\n"
     );
 
     return 0;
 }
 
+/* =====================================================
+ * MODULE CLEANUP
+ * ===================================================== */
 
-/* =========================================================
- * MODULE EXIT
- * ========================================================= */
-
-static void __exit lab2_exit(void)
+/*
+ * Unregister all driver resources.
+ */
+static void __exit asgn1_exit(void)
 {
-    remove_proc_entry("lab2_info", NULL);
+    /* Remove procfs */
+    proc_remove(asgn1_proc_entry);
 
+    /* Remove sysfs */
     sysfs_remove_group(
-        &lab2_device->kobj,
-        &lab2_attr_group
+        &asgn1_device->kobj,
+        &asgn1_attr_group
     );
 
+    /* Remove device */
     device_destroy(
-        lab2_class,
+        asgn1_class,
         MKDEV(major_number, 0)
     );
 
-    class_destroy(lab2_class);
+    /* Destroy class */
+    class_destroy(asgn1_class);
 
+    /* Unregister character device */
     unregister_chrdev(
         major_number,
         DEVICE_NAME
     );
 
     pr_info(
-        "lab2_driver: module unloaded\n"
+        "asgn1: module unloaded successfully\n"
     );
 }
 
+/* =====================================================
+ * REGISTER MODULE
+ * ===================================================== */
 
-module_init(lab2_init);
-module_exit(lab2_exit);
+module_init(asgn1_init);
+module_exit(asgn1_exit);
