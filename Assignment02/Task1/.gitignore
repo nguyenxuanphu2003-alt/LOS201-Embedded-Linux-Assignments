@@ -1,0 +1,45 @@
+# Kernel build
+*.o
+*.ko
+*.mod
+*.mod.c
+*.cmd
+Module.symvers
+modules.order
+
+# Executables
+sms_app
+sms_app_x86
+
+# Backups
+*.backup
+*.before_*
+*.bak
+
+# Development files
+reference/
+test_rootfs/
+output/
+logs/
+
+# Compiled applications
+sms_app
+sms_app_x86
+
+# Build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+Module.symvers
+modules.order
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Temporary files
+*.log
