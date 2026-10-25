@@ -3,7 +3,7 @@
  * Sensor Monitoring System - IOCTL Header
  *
  * Student: Nguyen Xuan Phu
- * Student ID: 
+ * Student ID:
  * University: FPT University
  *
  * Target: Linux Kernel 5.15 - ARMv7
