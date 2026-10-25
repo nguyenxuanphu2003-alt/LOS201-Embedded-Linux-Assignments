@@ -195,7 +195,7 @@ void *processor_thread(void *arg)
             );
         }
     }
-atomic_store(&ctx->processor_done, true);
+    atomic_store(&ctx->processor_done, true);
     printf("[Processor] Thread stopped\n");
 
     return NULL;

@@ -1,5 +1,9 @@
 # Task 1 - Test Results
 
+## Earlier Practice Prototype Results
+
+The following tests were performed on an earlier development prototype.
+
 ## Test 1: Sensor Monitoring - 60 Seconds
 
 Platform: QEMU ARMv7
@@ -126,4 +130,4 @@ without reporting an IOCTL error.
 A direct IOCTL success message should also be
 confirmed in the terminal output.
 
-Result: Functionally tested; explicit confirmation pending.
+Result: PASS for integrated execution. The exact IOCTL success message was not archived.

@@ -58,7 +58,7 @@ Alert Thread:
 Receives and displays alerts through POSIX Message Queues.
 
 Logger Thread:
-Writes monitoring data and alerts to a log file.
+Writes processed sensor samples to /tmp/sms.log. Alert notifications are displayed by the Alert Thread.
 
 Circular Buffer:
 Uses mutex and condition variables for thread synchronization.
@@ -66,7 +66,9 @@ Uses mutex and condition variables for thread synchronization.
 ### Development Test Results
 
 - Kernel driver loaded successfully on QEMU.
-- 60-second test at 500 ms: 119 samples.
+- Earlier practice prototype: 60 seconds, 119 samples.
+- Current integrated application: 15 seconds, 30 samples.
+- Current SIGINT test: 21 samples, graceful shutdown.
 - SCHED_FIFO priority 50: successful.
 - Circular buffer overflow: 0.
 - SIGINT graceful shutdown: successful.
@@ -78,3 +80,14 @@ in the development environment.
 
 Final source review, individual implementation verification,
 and submission packaging are still in progress.
+
+
+### Source Provenance
+
+This repository includes an AI-assisted learning prototype.
+The application was compiled and tested on QEMU ARMv7.
+
+AI-generated portions must not be represented as independently
+authored student work. Before academic submission, the source
+must be independently implemented and reviewed in accordance
+with the course requirements.

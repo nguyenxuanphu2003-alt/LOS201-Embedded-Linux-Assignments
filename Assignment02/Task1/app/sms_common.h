@@ -65,8 +65,8 @@ typedef struct {
 
     circular_buffer_t buffer;
     atomic_bool stop;
-atomic_bool processor_done;
-atomic_bool alert_done;
+    atomic_bool processor_done;
+    atomic_bool alert_done;
     unsigned long long processed;
 } sms_context_t;
 /* Sensor thread */

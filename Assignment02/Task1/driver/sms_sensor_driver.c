@@ -1,5 +1,5 @@
 /*
- * ASSIGNMENT 01 - TASK 1
+ * ASSIGNMENT 02 - TASK 1
  * Character Device Driver with IOCTL Interface
  *
  * Student: Nguyen Xuan Phu
@@ -32,7 +32,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Student");
-MODULE_DESCRIPTION("Assignment 01 - Character Device with IOCTL");
+MODULE_DESCRIPTION("Assignment 02 - Sensor Monitoring System");
 MODULE_VERSION("1.0");
 
 /* =====================================================
@@ -833,7 +833,7 @@ sms_start_ms = ktime_to_ms(ktime_get());
     );
 
     pr_info(
-        "asgn1: /dev/asgn1 registered, major=%d\n",
+        "sms_sensor: /dev/sms_sensor registered, major=%d\n",
         major_number
     );
 
