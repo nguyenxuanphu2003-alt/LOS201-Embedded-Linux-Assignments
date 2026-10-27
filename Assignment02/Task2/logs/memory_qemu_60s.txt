@@ -1,0 +1,51 @@
+TASK 2 - MEMORY FOOTPRINT TEST
+Platform: QEMU ARMv7
+Kernel: Linux 5.15
+Duration: 60 seconds
+Sampling interval: 500ms
+
+===== DRIVER BEFORE =====
+read_count: 119
+last_temperature: 15.14
+last_humidity: 42.63
+uptime_seconds: 263
+
+===== T=5s =====
+VmSize: 35496 kB
+VmRSS: 160 kB
+VmData: 33096 kB
+VmStk: 132 kB
+Threads: 5
+
+===== T=30s =====
+VmSize: 35496 kB
+VmRSS: 160 kB
+VmData: 33096 kB
+VmStk: 132 kB
+Threads: 5
+
+===== T=55s =====
+VmSize: 35496 kB
+VmRSS: 160 kB
+VmData: 33096 kB
+VmStk: 132 kB
+Threads: 5
+
+===== DRIVER AFTER =====
+read_count: 238
+last_temperature: 42.35
+last_humidity: 69.17
+uptime_seconds: 323
+
+===== APPLICATION STATISTICS =====
+Produced: 119
+Consumed: 119
+Processed: 119
+Overflow: 0
+Buffer remaining: 0
+
+===== RESULT =====
+Memory footprint: Stable during observation
+Driver reads during test: 119
+Expected reads: 120 +/- 10
+Memory leak status: Not yet verified by Valgrind

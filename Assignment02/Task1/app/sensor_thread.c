@@ -122,12 +122,14 @@ void *sensor_thread(void *arg)
 
             if (buffer_push(&ctx->buffer, sample)) {
 
-                printf(
-                    "[Sensor] Timestamp=%llu Temp=%.2f Humid=%.2f\n",
-                    sample.timestamp_ms,
-                    sample.temperature,
-                    sample.humidity
-                );
+                if (ctx->verbose) {
+                    printf(
+                        "[Sensor] Timestamp=%llu Temp=%.2f Humid=%.2f\n",
+                        sample.timestamp_ms,
+                        sample.temperature,
+                        sample.humidity
+                    );
+                }
 
             } else {
                 fprintf(stderr,

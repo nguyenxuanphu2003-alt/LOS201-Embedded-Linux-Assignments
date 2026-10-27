@@ -1,0 +1,10 @@
+# Test binaries
+tests/sms_app_x86_mock
+
+# Build artifacts
+*.o
+*.ko
+*.bak
+
+# Temporary files
+*~

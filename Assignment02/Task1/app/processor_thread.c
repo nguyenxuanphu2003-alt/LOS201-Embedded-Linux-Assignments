@@ -63,12 +63,15 @@ static void send_alert_message(
     double value,
     double threshold)
 {
-    alert_message_t alert = {
-        .timestamp_ms = timestamp,
-        .type = type,
-        .value = value,
-        .threshold = threshold
-    };
+    alert_message_t alert;
+
+    /* Initialize all bytes, including structure padding */
+    memset(&alert, 0, sizeof(alert));
+
+    alert.timestamp_ms = timestamp;
+    alert.type = type;
+    alert.value = value;
+    alert.threshold = threshold;
 
     if (send_message(ctx->alarm_q,
                      &alert,
@@ -155,7 +158,8 @@ void *processor_thread(void *arg)
             temp_change
         );
 
-        printf("[Processor] %s\n", log_message);
+        if (ctx->verbose)
+            printf("[Processor] %s\n", log_message);
 
         send_log_message(ctx, log_message);
 

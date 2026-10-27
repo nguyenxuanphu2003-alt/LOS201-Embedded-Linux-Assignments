@@ -12,6 +12,7 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 #include <time.h>
+#include <math.h>
 
 #define DEVICE_PATH "/dev/sms_sensor"
 
@@ -20,7 +21,7 @@
 
 #define BUFFER_CAPACITY 64
 #define DEFAULT_INTERVAL_MS 500
-#define DEFAULT_DURATION_SEC 15
+#define DEFAULT_DURATION_SEC 60
 
 static volatile sig_atomic_t interrupted = 0;
 
@@ -89,38 +90,142 @@ static void cleanup_queues(sms_context_t *ctx)
     mq_unlink(LOG_QUEUE);
 }
 
+
+/* Parse an unsigned integer argument */
+static bool parse_uint_arg(
+    const char *text,
+    unsigned int *out,
+    unsigned int min,
+    unsigned int max)
+{
+    char *end = NULL;
+
+    if (!text || !*text || *text == '-')
+        return false;
+
+    errno = 0;
+    unsigned long value = strtoul(text, &end, 10);
+
+    if (errno != 0 || end == text ||
+        *end != '\0' || value < min || value > max)
+        return false;
+
+    *out = (unsigned int)value;
+    return true;
+}
+
+/* Parse a floating-point threshold */
+static bool parse_double_arg(
+    const char *text,
+    double *out,
+    double min,
+    double max)
+{
+    char *end = NULL;
+
+    errno = 0;
+    double value = strtod(text, &end);
+
+    if (errno != 0 || end == text ||
+        *end != '\0' || !isfinite(value) ||
+        value < min || value > max)
+        return false;
+
+    *out = value;
+    return true;
+}
+
+static void print_usage(const char *program)
+{
+    fprintf(stderr,
+        "Usage: %s [OPTIONS]\n"
+        "  -i <ms>   Sampling interval (default: 500)\n"
+        "  -t <C>    Temperature threshold (default: 40)\n"
+        "  -h <%%>    Humidity threshold (default: 80)\n"
+        "  -d <sec>  Duration, 0 = infinite (default: 60)\n"
+        "  -v        Verbose sensor output\n",
+        program);
+}
+
 /* Main Application */
 int main(int argc, char *argv[])
 {
     unsigned int duration = DEFAULT_DURATION_SEC;
+    unsigned int interval = DEFAULT_INTERVAL_MS;
 
-    if (argc > 2) {
-        fprintf(stderr, "Usage: %s [duration_seconds]\n", argv[0]);
-        return EXIT_FAILURE;
-    }
+    double temp_threshold = 40.0;
+    double humid_threshold = 80.0;
 
-    if (argc == 2) {
-        char *end = NULL;
+    bool verbose = false;
+    bool valid = true;
 
-        errno = 0;
-        unsigned long value = strtoul(argv[1], &end, 10);
+    /* Preserve the old positional duration syntax */
+    if (argc == 2 && argv[1][0] != '-') {
+        valid = parse_uint_arg(
+            argv[1], &duration, 0, 3600
+        );
+    } else {
+        int opt;
 
-        if (errno != 0 || end == argv[1] ||
-            *end != '\0' || value > 3600) {
-            fprintf(stderr, "Invalid duration\n");
-            return EXIT_FAILURE;
+        opterr = 0;
+
+        while ((opt = getopt(argc, argv, "i:t:h:d:v")) != -1) {
+            switch (opt) {
+            case 'i':
+                valid = parse_uint_arg(
+                    optarg, &interval, 1, 60000
+                );
+                break;
+
+            case 't':
+                valid = parse_double_arg(
+                    optarg, &temp_threshold, 0.0, 100.0
+                );
+                break;
+
+            case 'h':
+                valid = parse_double_arg(
+                    optarg, &humid_threshold, 0.0, 100.0
+                );
+                break;
+
+            case 'd':
+                valid = parse_uint_arg(
+                    optarg, &duration, 0, 3600
+                );
+                break;
+
+            case 'v':
+                verbose = true;
+                break;
+
+            default:
+                valid = false;
+                break;
+            }
+
+            if (!valid)
+                break;
         }
 
-        duration = (unsigned int)value;
+        if (optind != argc)
+            valid = false;
+    }
+
+    if (!valid) {
+        fprintf(stderr, "Invalid command-line arguments\n");
+        print_usage(argv[0]);
+        return EXIT_FAILURE;
     }
 
     sms_context_t ctx = {0};
 
     ctx.device_path = DEVICE_PATH;
-    ctx.interval_ms = DEFAULT_INTERVAL_MS;
+    ctx.interval_ms = interval;
 
-    ctx.temp_threshold = 40.0;
-    ctx.humid_threshold = 80.0;
+    ctx.temp_threshold = temp_threshold;
+    ctx.humid_threshold = humid_threshold;
+    ctx.verbose = verbose;
 
     ctx.alarm_q = (mqd_t)-1;
     ctx.log_q = (mqd_t)-1;

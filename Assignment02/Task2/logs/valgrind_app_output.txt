@@ -1,0 +1,51 @@
+[Sensor] SCHED_FIFO priority 50: Operation not permitted
+[Main] Kernel sampling interval set to 500 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 500 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Main] All threads started
+[Main] Press Ctrl+C to stop
+[Logger] Thread started
+[Logger] Writing to /tmp/sms.log
+[Alert] Thread started
+[Sensor] Thread started
+[Processor] Thread started
+[Alert] TYPE=HUMID_HIGH TS=3831997 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=3835997 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=3836497 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=3840497 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=3840997 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=3840997 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=3841497 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=3841997 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=3842497 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=3842997 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=3844997 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=3849497 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=3853497 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=3853997 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=3855997 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=3856497 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=3856997 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=3857497 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=3857997 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=3857997 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=3862497 VALUE=86.00 THRESHOLD=80.00
+[Main] Shutting down...
+[Processor] Thread stopped
+[Sensor] Thread stopped
+[Alert] Thread stopped
+[Logger] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 71
+Consumed: 71
+Processed: 71
+Overflow: 0
+Buffer remaining: 0
+======================================
+[Main] Application stopped

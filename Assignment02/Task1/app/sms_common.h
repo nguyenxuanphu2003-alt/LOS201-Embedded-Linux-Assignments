@@ -56,6 +56,7 @@ void buffer_get_stats(
 typedef struct {
     const char *device_path;
     unsigned int interval_ms;
+    bool verbose;
 
     double temp_threshold;
     double humid_threshold;
