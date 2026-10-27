@@ -8,3 +8,7 @@ tests/sms_app_x86_mock
 
 # Temporary files
 *~
+
+# Previous Valgrind test logs
+logs/valgrind_sms_before_fix.txt
+logs/valgrind_sms_previous.txt
