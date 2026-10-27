@@ -1,0 +1,70 @@
+Breakpoint 1 at 0x3934: file ../Task1/app/circular_buffer.c, line 72.
+Starting program: /home/phu/LOS201-Embedded-Linux-Assignments/Assignment02/Task2/tests/sms_app_x86_mock -i 500 -d 10
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for system-supplied DSO at 0x7ffff7fc3000
+[###                                                                         ][ ###                                                                        ][  ###                                                                       ][   ###                                                                      ][    ###                                                                     ][     ###                                                                    ][      ###                                                                   ][       ###                                                                  ][        ###                                                                 ][         ###                                                                ][          ###                                                               ][           ###                                                              ][            ###                                                             ][             ###                                                            ][              ###                                                           ][               ###                                                          ][#################################                            ]  56% (54.59 K)[#################################                            ]  56% (54.59 K)[#############################################################] 100% (54.59 K)                                                                                [Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff7bff6c0 (LWP 9798)]
+[New Thread 0x7ffff73fe6c0 (LWP 9799)]
+[New Thread 0x7ffff6bfd6c0 (LWP 9800)]
+[New Thread 0x7ffff63fc6c0 (LWP 9801)]
+[Switching to Thread 0x7ffff6bfd6c0 (LWP 9800)]
+
+Thread 4 "sms_app_x86_moc" hit Breakpoint 1, buffer_pop (q=0x7fffffffdbe8, sample=0x7ffff6bfccf0, stop=0x7fffffffdc80) at ../Task1/app/circular_buffer.c:72
+72	{
+  Id   Target Id                                          Frame 
+  1    Thread 0x7ffff7fa8740 (LWP 9786) "sms_app_x86_moc" 0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fffffffdb10, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  2    Thread 0x7ffff7bff6c0 (LWP 9798) "sms_app_x86_moc" 0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff7bfed60, msg_prio=0x0, msg_len=256, msg_ptr=0x7ffff7bfedb0 "", mqdes=4) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+  3    Thread 0x7ffff73fe6c0 (LWP 9799) "sms_app_x86_moc" 0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff73fde30, msg_prio=0x0, msg_len=32, msg_ptr=0x7ffff73fde40 "", mqdes=3) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+* 4    Thread 0x7ffff6bfd6c0 (LWP 9800) "sms_app_x86_moc" buffer_pop (q=0x7fffffffdbe8, sample=0x7ffff6bfccf0, stop=0x7fffffffdc80) at ../Task1/app/circular_buffer.c:72
+  5    Thread 0x7ffff63fc6c0 (LWP 9801) "sms_app_x86_moc" 0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=1, flags=1, req=0x7ffff63fbe80, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+$1 = 0
+$2 = 1
+$3 = 1
+
+Thread 5 (Thread 0x7ffff63fc6c0 (LWP 9801) "sms_app_x86_moc"):
+#0  0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=1, flags=1, req=0x7ffff63fbe80, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x0000555555557fe2 in sensor_thread (arg=0x7fffffffdbc0) at ../Task1/app/sensor_thread.c:145
+#2  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#3  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 4 (Thread 0x7ffff6bfd6c0 (LWP 9800) "sms_app_x86_moc"):
+#0  buffer_pop (q=0x7fffffffdbe8, sample=0x7ffff6bfccf0, stop=0x7fffffffdc80) at ../Task1/app/circular_buffer.c:72
+#1  0x000055555555887c in processor_thread (arg=0x7fffffffdbc0) at ../Task1/app/processor_thread.c:107
+#2  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#3  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 3 (Thread 0x7ffff73fe6c0 (LWP 9799) "sms_app_x86_moc"):
+#0  0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff73fde30, msg_prio=0x0, msg_len=32, msg_ptr=0x7ffff73fde40 "", mqdes=3) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+#1  ___mq_timedreceive_time64 (mqdes=3, msg_ptr=0x7ffff73fde40 "", msg_len=32, msg_prio=0x0, abs_timeout=0x7ffff73fde30) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:26
+#2  0x0000555555558a16 in alert_thread (arg=0x7fffffffdbc0) at ../Task1/app/alert_thread.c:54
+#3  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#4  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 2 (Thread 0x7ffff7bff6c0 (LWP 9798) "sms_app_x86_moc"):
+#0  0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff7bfed60, msg_prio=0x0, msg_len=256, msg_ptr=0x7ffff7bfedb0 "", mqdes=4) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+#1  ___mq_timedreceive_time64 (mqdes=4, msg_ptr=0x7ffff7bfedb0 "", msg_len=256, msg_prio=0x0, abs_timeout=0x7ffff7bfed60) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:26
+#2  0x0000555555558cd6 in logger_thread (arg=0x7fffffffdbc0) at ../Task1/app/logger_thread.c:47
+#3  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#4  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 1 (Thread 0x7ffff7fa8740 (LWP 9786) "sms_app_x86_moc"):
+#0  0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fffffffdb10, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007ffff7cf9b27 in __GI___nanosleep (req=<optimized out>, rem=<optimized out>) at ../sysdeps/unix/sysv/linux/nanosleep.c:25
+#2  0x0000555555557460 in main (argc=5, argv=0x7fffffffddc8) at ../Task1/app/sms_app.c:387
+Breakpoint 2 at 0x555555557824: file ../Task1/app/circular_buffer.c, line 42.
+Continuing.
+[Thread 0x7ffff63fc6c0 (LWP 9801) exited]
+[Thread 0x7ffff6bfd6c0 (LWP 9800) exited]
+[Thread 0x7ffff73fe6c0 (LWP 9799) exited]
+[Thread 0x7ffff7bff6c0 (LWP 9798) exited]
+[Inferior 1 (process 9786) exited normally]
+No threads.
+No symbol "q" in current context.
+No symbol "q" in current context.
+No symbol "q" in current context.
+The program is not being run.

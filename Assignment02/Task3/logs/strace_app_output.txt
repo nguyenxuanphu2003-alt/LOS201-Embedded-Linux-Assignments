@@ -1,0 +1,50 @@
+[Sensor] SCHED_FIFO priority 50: Operation not permitted
+[Main] Kernel sampling interval set to 500 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 500 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Alert] Thread started
+[Logger] Thread started
+[Logger] Writing to /tmp/sms.log
+[Processor] Thread started
+[Main] All threads started
+[Main] Running for 30 seconds
+[Sensor] Thread started
+[Alert] TYPE=HUMID_HIGH TS=4672560 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4676561 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4677060 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4681060 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=4681560 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=4681560 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=4682060 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4682560 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4683060 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=4683561 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=4685560 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4690060 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4694060 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4694560 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=4696560 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4697060 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4697560 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4698060 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=4698560 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=4698560 VALUE=29.00 THRESHOLD=5.00
+[Main] Shutting down...
+[Processor] Thread stopped
+[Alert] Thread stopped
+[Logger] Thread stopped
+[Sensor] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 61
+Consumed: 61
+Processed: 61
+Overflow: 0
+Buffer remaining: 0
+======================================
+[Main] Application stopped

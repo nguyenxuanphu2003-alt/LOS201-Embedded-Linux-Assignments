@@ -1,0 +1,95 @@
+Breakpoint 1 at 0x3824: file ../Task1/app/circular_buffer.c, line 42.
+Breakpoint 2 at 0x3934: file ../Task1/app/circular_buffer.c, line 72.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff7bff6c0 (LWP 10191)]
+[New Thread 0x7ffff73fe6c0 (LWP 10192)]
+[New Thread 0x7ffff6bfd6c0 (LWP 10193)]
+[New Thread 0x7ffff63fc6c0 (LWP 10194)]
+[Switching to Thread 0x7ffff63fc6c0 (LWP 10194)]
+
+===== SENSOR: BUFFER PUSH =====
+  Id   Target Id                                           Frame 
+  1    Thread 0x7ffff7fa8740 (LWP 10188) "sms_app_x86_moc" 0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fffffffdb00, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  2    Thread 0x7ffff7bff6c0 (LWP 10191) "sms_app_x86_moc" 0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff7bfed60, msg_prio=0x0, msg_len=256, msg_ptr=0x7ffff7bfedb0 "", mqdes=4) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+  3    Thread 0x7ffff73fe6c0 (LWP 10192) "sms_app_x86_moc" 0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff73fde30, msg_prio=0x0, msg_len=32, msg_ptr=0x7ffff73fde40 "", mqdes=3) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+  4    Thread 0x7ffff6bfd6c0 (LWP 10193) "sms_app_x86_moc" 0x00007ffff7c98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7fffffffdc68) at ./nptl/futex-internal.c:57
+* 5    Thread 0x7ffff63fc6c0 (LWP 10194) "sms_app_x86_moc" buffer_push (q=0x7fffffffdbd8, sample=...) at ../Task1/app/circular_buffer.c:42
+$1 = 0
+$2 = 0
+$3 = 0
+
+Thread 5 (Thread 0x7ffff63fc6c0 (LWP 10194) "sms_app_x86_moc"):
+#0  buffer_push (q=0x7fffffffdbd8, sample=...) at ../Task1/app/circular_buffer.c:42
+#1  0x0000555555557f4c in sensor_thread (arg=0x7fffffffdbb0) at ../Task1/app/sensor_thread.c:123
+#2  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#3  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 4 (Thread 0x7ffff6bfd6c0 (LWP 10193) "sms_app_x86_moc"):
+#0  0x00007ffff7c98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7fffffffdc68) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7fffffffdc68) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fffffffdc68, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007ffff7c9b8cd in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fffffffdc18, cond=0x7fffffffdc40) at ./nptl/pthread_cond_wait.c:503
+
+Thread 3 (Thread 0x7ffff73fe6c0 (LWP 10192) "sms_app_x86_moc"):
+#0  0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff73fde30, msg_prio=0x0, msg_len=32, msg_ptr=0x7ffff73fde40 "", mqdes=3) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+#1  ___mq_timedreceive_time64 (mqdes=3, msg_ptr=0x7ffff73fde40 "", msg_len=32, msg_prio=0x0, abs_timeout=0x7ffff73fde30) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:26
+#2  0x0000555555558a16 in alert_thread (arg=0x7fffffffdbb0) at ../Task1/app/alert_thread.c:54
+#3  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+
+Thread 2 (Thread 0x7ffff7bff6c0 (LWP 10191) "sms_app_x86_moc"):
+#0  0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff7bfed60, msg_prio=0x0, msg_len=256, msg_ptr=0x7ffff7bfedb0 "", mqdes=4) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+#1  ___mq_timedreceive_time64 (mqdes=4, msg_ptr=0x7ffff7bfedb0 "", msg_len=256, msg_prio=0x0, abs_timeout=0x7ffff7bfed60) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:26
+#2  0x0000555555558cd6 in logger_thread (arg=0x7fffffffdbb0) at ../Task1/app/logger_thread.c:47
+#3  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+
+Thread 1 (Thread 0x7ffff7fa8740 (LWP 10188) "sms_app_x86_moc"):
+#0  0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fffffffdb00, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007ffff7cf9b27 in __GI___nanosleep (req=<optimized out>, rem=<optimized out>) at ../sysdeps/unix/sysv/linux/nanosleep.c:25
+#2  0x0000555555557460 in main (argc=5, argv=0x7fffffffddb8) at ../Task1/app/sms_app.c:387
+[Switching to Thread 0x7ffff6bfd6c0 (LWP 10193)]
+
+===== PROCESSOR: BUFFER POP =====
+  Id   Target Id                                           Frame 
+  1    Thread 0x7ffff7fa8740 (LWP 10188) "sms_app_x86_moc" 0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fffffffdb00, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  2    Thread 0x7ffff7bff6c0 (LWP 10191) "sms_app_x86_moc" 0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff7bfed60, msg_prio=0x0, msg_len=256, msg_ptr=0x7ffff7bfedb0 "SAMPLE ts=4950887 T=16.00 H=37.00 avgT=16.00 avgH=37.00 deltaT=0.00", mqdes=4) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+  3    Thread 0x7ffff73fe6c0 (LWP 10192) "sms_app_x86_moc" 0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff73fde30, msg_prio=0x0, msg_len=32, msg_ptr=0x7ffff73fde40 "", mqdes=3) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+* 4    Thread 0x7ffff6bfd6c0 (LWP 10193) "sms_app_x86_moc" buffer_pop (q=0x7fffffffdbd8, sample=0x7ffff6bfccf0, stop=0x7fffffffdc70) at ../Task1/app/circular_buffer.c:72
+  5    Thread 0x7ffff63fc6c0 (LWP 10194) "sms_app_x86_moc" 0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=1, flags=1, req=0x7ffff63fbe80, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+$4 = 1
+$5 = 1
+$6 = 0
+
+Thread 5 (Thread 0x7ffff63fc6c0 (LWP 10194) "sms_app_x86_moc"):
+#0  0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=1, flags=1, req=0x7ffff63fbe80, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x0000555555557fe2 in sensor_thread (arg=0x7fffffffdbb0) at ../Task1/app/sensor_thread.c:145
+#2  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#3  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 4 (Thread 0x7ffff6bfd6c0 (LWP 10193) "sms_app_x86_moc"):
+#0  buffer_pop (q=0x7fffffffdbd8, sample=0x7ffff6bfccf0, stop=0x7fffffffdc70) at ../Task1/app/circular_buffer.c:72
+#1  0x000055555555887c in processor_thread (arg=0x7fffffffdbb0) at ../Task1/app/processor_thread.c:107
+#2  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+#3  0x00007ffff7d29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+Thread 3 (Thread 0x7ffff73fe6c0 (LWP 10192) "sms_app_x86_moc"):
+#0  0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff73fde30, msg_prio=0x0, msg_len=32, msg_ptr=0x7ffff73fde40 "", mqdes=3) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+#1  ___mq_timedreceive_time64 (mqdes=3, msg_ptr=0x7ffff73fde40 "", msg_len=32, msg_prio=0x0, abs_timeout=0x7ffff73fde30) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:26
+#2  0x0000555555558a16 in alert_thread (arg=0x7fffffffdbb0) at ../Task1/app/alert_thread.c:54
+#3  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+
+Thread 2 (Thread 0x7ffff7bff6c0 (LWP 10191) "sms_app_x86_moc"):
+#0  0x00007ffff7ca87ed in ___mq_timedreceive_time64 (abs_timeout=0x7ffff7bfed60, msg_prio=0x0, msg_len=256, msg_ptr=0x7ffff7bfedb0 "SAMPLE ts=4950887 T=16.00 H=37.00 avgT=16.00 avgH=37.00 deltaT=0.00", mqdes=4) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:35
+#1  ___mq_timedreceive_time64 (mqdes=4, msg_ptr=0x7ffff7bfedb0 "SAMPLE ts=4950887 T=16.00 H=37.00 avgT=16.00 avgH=37.00 deltaT=0.00", msg_len=256, msg_prio=0x0, abs_timeout=0x7ffff7bfed60) at ../sysdeps/unix/sysv/linux/mq_timedreceive.c:26
+#2  0x0000555555558cd6 in logger_thread (arg=0x7fffffffdbb0) at ../Task1/app/logger_thread.c:47
+#3  0x00007ffff7c9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
+
+Thread 1 (Thread 0x7ffff7fa8740 (LWP 10188) "sms_app_x86_moc"):
+#0  0x00007ffff7cecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fffffffdb00, rem=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007ffff7cf9b27 in __GI___nanosleep (req=<optimized out>, rem=<optimized out>) at ../sysdeps/unix/sysv/linux/nanosleep.c:25
+#2  0x0000555555557460 in main (argc=5, argv=0x7fffffffddb8) at ../Task1/app/sms_app.c:387
+[Thread 0x7ffff6bfd6c0 (LWP 10193) exited]
+[Thread 0x7ffff73fe6c0 (LWP 10192) exited]
+[Thread 0x7ffff7bff6c0 (LWP 10191) exited]
+[Thread 0x7ffff63fc6c0 (LWP 10194) exited]
+[Inferior 1 (process 10188) exited normally]

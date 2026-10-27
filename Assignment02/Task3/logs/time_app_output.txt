@@ -1,0 +1,49 @@
+[Main] Kernel sampling interval set to 500 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 500 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Alert] Thread started
+[Main] All threads started
+[Main] Running for 30 seconds
+[Processor] Thread started
+[Sensor] Thread started
+[Logger] Thread started
+[Logger] Writing to /tmp/sms.log
+[Alert] TYPE=HUMID_HIGH TS=4968223 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4972223 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4972723 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4976723 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=4977223 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=4977223 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=4977723 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4978223 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4978723 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=4979223 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=4981223 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4985723 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4989723 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=4990223 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=4992223 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4992723 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4993223 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=4993723 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=4994223 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=4994223 VALUE=29.00 THRESHOLD=5.00
+[Main] Shutting down...
+[Processor] Thread stopped
+[Alert] Thread stopped
+[Logger] Thread stopped
+[Sensor] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 61
+Consumed: 61
+Processed: 61
+Overflow: 0
+Buffer remaining: 0
+======================================
+[Main] Application stopped
