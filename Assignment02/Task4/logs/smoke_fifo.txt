@@ -1,0 +1,86 @@
+[Sensor] policy=SCHED_FIFO priority=50: OK
+[Logger] fopen: Permission denied
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Main] mlockall: OK
+[Main] Kernel sampling interval set to 100 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 100 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Alert] Thread started
+[Processor] Thread started
+[Main] All threads started
+[Main] Running for 5 seconds
+[Sensor] Thread started
+[Alert] TYPE=HUMID_HIGH TS=1505350 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1506150 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1506250 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1507050 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1507150 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1507150 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1507250 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1507350 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1507449 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1507550 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1507949 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1508849 VALUE=87.00 THRESHOLD=80.00
+[Main] Shutting down...
+[JITTER] policy=SCHED_FIFO samples=51 interval_ms=100
+[JITTER] min_us=28 avg_us=120.18 max_us=209 p99_us=209
+[JITTER] histogram 0-100us=14 100-500us=37 500-1000us=0 >=1000us=0
+[Sensor] Thread stopped
+[Processor] Thread stopped
+[Alert] TYPE=HUMID_HIGH TS=1509649 VALUE=82.00 THRESHOLD=80.00
+[Alert] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 51
+Consumed: 51
+Processed: 51
+Overflow: 0
+Buffer remaining: 0
+======================================
+[Main] Application stopped

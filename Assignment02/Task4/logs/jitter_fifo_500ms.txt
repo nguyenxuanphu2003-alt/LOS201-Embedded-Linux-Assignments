@@ -1,0 +1,183 @@
+[Logger] fopen: Permission denied
+[Sensor] policy=SCHED_FIFO priority=50: OK
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Main] mlockall: OK
+[Main] Kernel sampling interval set to 500 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 500 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Alert] Thread started
+[Processor] Thread started
+[Main] All threads started
+[Main] Running for 60 seconds
+[Sensor] Thread started
+[Alert] TYPE=HUMID_HIGH TS=1841731 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1845731 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1846231 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1850231 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1850731 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1850731 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1851231 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1851731 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1852231 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1852731 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1854731 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1859231 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1863231 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1863731 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1865731 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1866231 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1866731 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1867231 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1867731 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1867731 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1872231 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1876231 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1876731 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1880731 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1880731 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1881231 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1881231 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1881731 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1882231 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1882731 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1885231 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1889731 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1893731 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1894231 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1895731 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1896231 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1896731 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1897231 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1897731 VALUE=29.00 THRESHOLD=5.00
+[Main] Shutting down...
+[Processor] Thread stopped
+[Alert] TYPE=HUMID_HIGH TS=1898231 VALUE=84.00 THRESHOLD=80.00
+[Alert] Thread stopped
+[JITTER] policy=SCHED_FIFO samples=121 interval_ms=500
+[JITTER] min_us=16 avg_us=110.34 max_us=294 p99_us=252
+[JITTER] histogram 0-100us=67 100-500us=54 500-1000us=0 >=1000us=0
+[Sensor] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 121
+Consumed: 121
+Processed: 121
+Overflow: 0
+Buffer remaining: 0
+======================================
+[Main] Application stopped

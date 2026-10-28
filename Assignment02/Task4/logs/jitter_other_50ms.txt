@@ -1,0 +1,1457 @@
+[Logger] fopen: Permission denied
+[Sensor] policy=SCHED_OTHER priority=0: OK
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Main] mlockall: OK
+[Main] Kernel sampling interval set to 50 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 50 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Alert] Thread started
+[Processor] Thread started
+[Main] All threads started
+[Main] Running for 60 seconds
+[Sensor] Thread started
+[Alert] TYPE=HUMID_HIGH TS=1512991 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1513391 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1513441 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1513841 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1513891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1513891 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1513941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1513991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1514041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1514091 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1514291 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1514740 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1515140 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1515191 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1515391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1515441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1515491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1515541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1515591 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1515591 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1516041 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1516441 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1516491 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1516891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1516891 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1516940 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1516940 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1516991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1517041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1517091 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1517341 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1517791 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1518190 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1518241 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1518391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1518441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1518491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1518541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1518591 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1518641 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1519091 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1519490 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1519891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1519991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1519991 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1520091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1520391 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1521291 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1521391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1521491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1521591 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1521691 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1522591 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1522891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1522991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1522991 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1523091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1523891 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=152429[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+1 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1524391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1524491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1524591 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1525191 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1525591 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1525891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1525991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1526091 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1526091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1526491 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1527391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1527391 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1527491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1527591 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1527791 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1528691 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1528891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1528991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1529091 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1529091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1529991 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1530390 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1530390 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1530491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1530590 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1531291 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1531691 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1531891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1531991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1532091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1532191 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1532591 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1533391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1533490 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1533490 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1533591 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1533891 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1534791 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1534891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1534991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1535091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1535191 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1536091 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1536391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1536491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1536491 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1536590 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1537391 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1537791 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1537891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1537991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1538091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1538290 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1538691 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1539391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1539491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1539591 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1539591 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1539991 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1540891 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1540891 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1540991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1541091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1541291 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1542191 VALUE=87.00 THRESHOLD=80.00
+[Alert][Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+ TYPE=TEMP_HIGH TS=1542391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1542491 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1542591 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1542591 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1543040 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1543940 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1543940 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1544041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1544141 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1544341 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1545241 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1545441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1545541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1545641 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1545641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1546541 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1546941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1546941 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1547041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1547140 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1547440 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1547840 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1548440 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1548541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1548641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1548741 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1549141 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1549941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1550041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1550041 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1550141 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1550441 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1551341 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1551441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1551541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1551641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1551741 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1552641 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1552940 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1553041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1553041 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1553140 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1553540 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1553941 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1554441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1554540 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1554641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1554841 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1555241 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1555941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1556041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1556141 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1556141 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1556541 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1557441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1557441 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1557541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1557641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1557841 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1558741 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1558941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1559041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1559141 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1559141 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1559641 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1560041 VALUE=85.[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Sensor] WARNING: Buffer overflow
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+[Processor] Log queue error: Connection timed out
+00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1560441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1560541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1560641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1560940 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1561341 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1561941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1562041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1562141 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1562241 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1562641 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1563441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1563541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1563541 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1563641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1563941 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1564841 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1564941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1565041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1565141 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1565241 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1565741 VALUE=90.00 THRESHOLD=80.00
+[Main] Shutting down...
+[Alert] TYPE=HUMID_HIGH TS=1566141 VALUE=85.00 THRESHOLD=80.00
+[JITTER] policy=SCHED_OTHER samples=1201 interval_ms=50
+[JITTER] min_us=58 avg_us=201.60 max_us=506 p99_us=313
+[JITTER] histogram 0-100us=204 100-500us=996 500-1000us=1 >=1000us=0
+[Sensor] Thread stopped
+[Alert] TYPE=TEMP_HIGH TS=1566441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1566541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1566641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1567041 VALUE=89.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1567441 VALUE=84.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1567941 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1568041 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1568140 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1568341 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1568741 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1569441 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1569541 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1569641 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_SPIKE TS=1569641 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1570041 VALUE=82.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1570991 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1571091 VALUE=28.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1571391 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1571791 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1572391 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1572491 VALUE=43.00 THRESHOLD=40.00
+[Processor] Thread stopped
+[Alert] TYPE=TEMP_SPIKE TS=1572591 VALUE=28.00 THRESHOLD=5.00
+[Alert] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 668
+Consumed: 668
+Processed: 668
+Overflow: 533
+Buffer remaining: 0
+======================================
+[Main] Application stopped

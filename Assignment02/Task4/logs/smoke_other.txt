@@ -1,0 +1,47 @@
+[Sensor] policy=SCHED_OTHER priority=0: OK
+[Main] mlockall: OK
+[Main] Kernel sampling interval set to 100 ms
+====================================
+ Sensor Monitoring System - Task 1
+====================================
+[Main] Device: /dev/sms_sensor
+[Main] Requested interval: 100 ms
+[Main] Temperature threshold: 40.00
+[Main] Humidity threshold: 80.00
+[Alert] Thread started
+[Logger] Thread started
+[Logger] Writing to /tmp/sms.log
+[Processor] Thread started
+[Main] All threads started
+[Main] Running for 5 seconds
+[Sensor] Thread started
+[Alert] TYPE=HUMID_HIGH TS=1362269 VALUE=86.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1363069 VALUE=81.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1363169 VALUE=88.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1363969 VALUE=83.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1364070 VALUE=41.00 THRESHOLD=40.00
+[Alert] TYPE=HUMID_HIGH TS=1364070 VALUE=90.00 THRESHOLD=80.00
+[Alert] TYPE=TEMP_HIGH TS=1364169 VALUE=42.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1364269 VALUE=43.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_HIGH TS=1364369 VALUE=44.00 THRESHOLD=40.00
+[Alert] TYPE=TEMP_SPIKE TS=1364469 VALUE=29.00 THRESHOLD=5.00
+[Alert] TYPE=HUMID_HIGH TS=1364870 VALUE=85.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1365770 VALUE=87.00 THRESHOLD=80.00
+[Alert] TYPE=HUMID_HIGH TS=1366569 VALUE=82.00 THRESHOLD=80.00
+[Main] Shutting down...
+[Processor] Thread stopped
+[JITTER] policy=SCHED_OTHER samples=51 interval_ms=100
+[JITTER] min_us=63 avg_us=201.12 max_us=365 p99_us=365
+[JITTER] histogram 0-100us=4 100-500us=47 500-1000us=0 >=1000us=0
+[Sensor] Thread stopped
+[Alert] Thread stopped
+[Logger] Thread stopped
+
+========== FINAL STATISTICS ==========
+Produced: 51
+Consumed: 51
+Processed: 51
+Overflow: 0
+Buffer remaining: 0
+======================================
+[Main] Application stopped

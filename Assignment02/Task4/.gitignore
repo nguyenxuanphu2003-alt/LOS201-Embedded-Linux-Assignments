@@ -1,0 +1,10 @@
+# Compiled binaries
+app/sms_app
+app/sms_app_x86
+app/sms_app_x86_mock
+*.o
+*.ko
+
+# Temporary files
+*.bak
+*~
